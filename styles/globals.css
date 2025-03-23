@@ -6,10 +6,15 @@
 *::after,
 *::before {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
+  padding: 0;
+  min-inline-size: 375px;
+  max-inline-size: 1440px;
 }
 
 h1,
@@ -21,7 +26,15 @@ h6,
 p,
 ul,
 ol,
-li {
+li,
+article,
+span,
+img,
+section,
+header,
+div,
+main,
+svg {
   margin: 0;
   padding: 0;
 }
@@ -32,9 +45,19 @@ a {
 
 button,
 input {
+  border: none;
+  box-shadow: none;
+  outline: none;
   color: currentColor;
   font-family: inherit;
+  font-weight: inherit;
   font-size: inherit;
+  text-transform: inherit;
+  background: none;
+}
+
+button:focus {
+  outline-color: transparent;
 }
 
 ul,
@@ -44,10 +67,10 @@ ol {
 
 .visually-hidden {
   position: absolute;
-  inline-size: 1px;
-  block-size: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
+  inline-size: 1px;
+  block-size: 1px;
   clip-path: inset(50%);
   white-space: nowrap;
 }
