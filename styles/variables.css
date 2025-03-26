@@ -6,6 +6,7 @@
   --border-color: #000;
   --accent-color: #000;
   --main-text-size: 18px;
+  --button-text-size: 14px;
   --bold-text-weight: 700;
   --regular-text-weight: 400;
   --bg-image: repeating-linear-gradient(90deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
